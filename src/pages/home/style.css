@@ -1,0 +1,63 @@
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-lobster: 'Lobster Two', sans-serif;
+}
+
+.font-poppins {
+    font-family: var(--font-poppins);
+}
+
+.input-search {
+    width: 30rem;
+}
+
+.box-image {
+    width: 100%;
+}
+
+.image-grafic {
+    width: 70%;
+    height: 15rem;
+    background-image: url(/challengeFiap/ChallengeFiap/src/images/Grafico\ grow\ up.svg);
+    background-repeat: no-repeat;
+}
+
+.image {
+    width: 30%;
+}
+
+.className {
+    display: grid;
+    font-weight: 700;
+    text-align: center;
+}
+
+.number {
+    background-color: #BFF52F;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.li-class{
+    display: grid;
+}
+
+@media (max-width: 768px) {
+
+    .box-principal {
+        display: grid !important;
+    }
+
+    .box-result{
+        display: grid;
+    }
+
+    .card-total {
+        width: 18rem !important;
+    }
+
+    .box-three {
+        width: 30rem;
+    }
+
+}

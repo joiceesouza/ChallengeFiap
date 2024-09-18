@@ -1,37 +1,178 @@
-<!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Challenge iFood</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Fiap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Link Fonte Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- fim link Fonte Poppins -->
-    
-    <!-- Link fonte Lobster Two -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <!-- fim link fonte Lobster Two -->
-    
-    <!-- Link Css BS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    
-    
+<body class="font-poppins">
+    <div class="container  box-principal d-flex col">
+        <!-- <div class="container row"> -->
+        <ul class="nav flex-column my-5 row box-one border-end box-user">
+
+            <li class="nav-item mb-5">
+                <img src="/challengeFiap/ChallengeFiap/src/images/logo_hero.svg">
+            </li>
+            <div class="">
+                <li class="nav-item"></li>
+                <img src="/challengeFiap/ChallengeFiap/src/images/Ellipse-1.png">
+                </li>
+                <li class="nav-item">
+                    <span id="userName"></span>
+                </li>
+                <li class="nav-item">
+                    <span id="userRegister"></span>
+                </li>
+                <li class="nav-item">
+                    <span id="userEmail"></span>
+                </li>
+            </div>
+            <li class="nav-item mt-5">
+                <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Saldo e transações</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pedidos</a>
+            </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-gear-fill"></i> Gestão de acessos</a>
+            </li> -->
+        </ul>
+        <section class="p-5 box-two">
+            <h2>Relatório e Análises Financeiras</h2>
+            <input class="input-search form-control me-2 p-2 mt-4 bg-danger rounded-5" type="search"
+                placeholder=" O que você procura?" aria-label="Search">
+            <div class="d-flex py-4 gap-5">
+                <p><span class="text-danger">Data de inicio:</span> 01/06/2024</p>
+                <p><span class="text-danger">Data Final:</span> 05/06/2024</p>
+            </div>
+            <div class="container box-result row rounded-4 gap-3">
+                <div class="card col border card-total border-danger rounded-4" style="width: 8rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Total parcial</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">R$ 15.587,92</h6>
+                        <p class="card-text"><span>+22%</span> esta semana</p>
+                    </div>
+                </div>
+                <div class="card col border border-danger rounded-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedidos</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary"><span>+32</span> Pedidos novos</h6>
+                    </div>
+                </div>
+                <div class="card col border border-danger rounded-4" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Total</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">R$ 22.695,77</h6>
+                        <p class="card-text"> <span>+11%</span> Em relação ao mês anterior</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container col-2 row d-flex p-4 box-image">
+                <img src="/challengeFiap/ChallengeFiap/src/images/Chart.svg" class="image-grafic">
+                <img src="/challengeFiap/ChallengeFiap/src/images/Img.svg" class="image">
+            </div>
+            <div>
+                <table class="table table-borderless border border-danger rounded-4">
+                    <thead>
+                        <tr class="table-danger">
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Valor</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Campanha Facebook</td>
+                            <td>R$ 1.864,20</td>
+                            <td>Pago</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Google Ads</td>
+                            <td>R$ 882,75</td>
+                            <td>Pago</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Campanha Instagram</td>
+                            <td>R$ 634,97</td>
+                            <td>Processando</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Campanha Tik Tok</td>
+                            <td>R$ 235,80</td>
+                            <td>Em aberto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="box-three my-5">
+
+            <div class="border border-danger rounded-4 p-3">
+                <h5>Mais vendidos</h3>
+                    <div class="d-flex p-2">
+                        <p><span class="number p-1">1º</span><img
+                                src="/challengeFiap/ChallengeFiap/src/images/burguer1.svg"></p>
+                        <p><span class="number p-1">2º</span><img
+                                src="/challengeFiap/ChallengeFiap/src/images/burguer2.svg"></p>
+                        <p><span class="number p-1">3º</span><img
+                                src="/challengeFiap/ChallengeFiap/src/images/burguer3.svg"></p>
+                    </div>
+            </div>
+            <div class="border border-danger rounded-4 p-2 mt-4">
+                <h5 class="p-2">Top Clientes</h5>
+                <div class="d-flex gap-3 p-2">
+                    <p class="className"><img src="/challengeFiap/ChallengeFiap/src/images/Ellipse-2.png"><span
+                            id="clientName"></span></p>
+                    <p class="className"><img src="/challengeFiap/ChallengeFiap/src/images/Ellipse-1.png"><span
+                            id="clientNameOne"></span></p>
+                    <p class="className"><img src="/challengeFiap/ChallengeFiap/src/images/Ellipse.png"><span
+                            id="clientNameTwo"></span></p>
+                </div>
+            </div>
+            <div class="box-numbers border border-danger rounded-4 p-2 mt-4">
+                <ul class="nav flex-column p-2 row gap-2">
+                    <li class="li-class">
+                        <h5 class="">Metas <i class="bi bi-plus"></i></h5>
+                    </li>
+                    <li class="li-class"><span class="border border-danger rounded-4 p-2 mt-3"><i
+                                class="bi bi-people"></i> 200 novos clientes</span></li>
+                    <li class="li-class"><span class="border border-danger rounded-4 p-2 mt-3"><i
+                                class="bi bi-instagram"></i> 1200 pedidos</span></li>
+                    <li class="li-class"><span class="border border-danger rounded-4 p-2 mt-3"><i
+                                class="bi bi-journal-text"></i> 2k no instagram</span></li>
+                </ul>
+            </div>
+                <img src="/challengeFiap/ChallengeFiap/src/images/Relatorio grafico pizza.svg">
+        </section>
+    </div>
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

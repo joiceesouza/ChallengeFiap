@@ -1,0 +1,20 @@
+:root {
+     --font-poppins: 'Poppins', sans-serif;
+     --font-lobster: 'Lobster Two', sans-serif;
+ }
+
+ .font-poppins {
+    font-family: var(--font-poppins);
+ }
+
+
+ .font-lobster {
+    font-family: var(--font-lobster);
+    font-weight: 700;
+    color: #EB0029 !important;
+ }
+
+ .box-image {
+    background-image:url(/challengeFiap/ChallengeFiap/src/images/vector1_hero.svg), url(/challengeFiap/ChallengeFiap/src/images/fundo_hero.svg);
+    background-repeat: no-repeat;
+ }
